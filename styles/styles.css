@@ -15,3 +15,9 @@ html{
     scroll-behavior: smooth;
 }
 
+.selected-seat{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+

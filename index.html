@@ -301,26 +301,16 @@
 
             <div class="bg-[#F7F8F8] w-[433px] h-[335px] rounded-lg mt-7">
               <div class="flex gap-32 p-5">
-                <p class="font-bold ">Seat <span id="current-seat" class="bg-[#1DD100] rounded-md px-1 text-[#FFFFFF] ">0</span></p>
+                <p id="seat" class="font-bold ">Seat <span id="current-seat" class="bg-[#1DD100] rounded-md px-1 text-[#FFFFFF] ">0</span></p>
                 <p class="font-bold">Class</p>
                 <p class="font-bold">Price</p>
               </div>
 
-              <div class="flex gap-32 px-5 inter-font text-[#03071299]">
-                <p>C2</p>
-                <p>Economoy</p>
-                <p>550</p>
-              </div>
-
-              <div class="flex gap-32 p-5 inter-font text-[#03071299]">
-                <p>C2</p>
-                <p>Economoy</p>
-                <p>550</p>
-              </div>
+              <div id="selected-seat-buttons"></div>
 
               <div class="flex space-x-60 ml-5 inter-font font-bold">
                 <p>Total Price</p>
-                <p>BDT 1100</p>
+                <p>BDT <span id="total">0</span></p>
               </div>
 
               <div class="p-5 flex">
@@ -330,7 +320,7 @@
 
               <div class="flex ml-5 space-x-56 inter-font font-bold">
                 <p>Grand Total</p>
-                <p>BDT 1000</p>
+                <p>BDT <span id="grand-total">0</span></p>
               </div>
               
             </div>
@@ -350,7 +340,7 @@
               <input class="w-[433px] h-[64px] bg-[#F7F8F8] rounded-lg p-5 mt-3" type="email" placeholder="Enter your email id">
             </div>
 
-            <p onclick="next()" id="next-btn" class="btn w-[433px] mt-7 bg-[#1DD100] text-[#FFFFFF] font-inter">Next</p>
+            <p onclick="next()" id="next-btn" class="btn-next w-[433px] h-[50px] rounded-lg inter-font font-bold hover:bg-gray-200 ease-out duration-300 flex items-center justify-center mt-7 bg-[#1DD100] text-[#FFFFFF] font-inter">Next</p>
 
             <div class="flex text-[13px] ml-5 mt-5 space-x-36 inter-font ">
               <p>Terms and Conditions</p>
